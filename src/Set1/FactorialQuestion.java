@@ -15,6 +15,7 @@ public class FactorialQuestion {
 		factorial1(5);
 		factorial1(9);
 		factorial1(10);
+		factorial1(-10);
 
 		System.out.println("\n----------Using factorial version 2 (recursive function)-----------");
 
@@ -23,6 +24,8 @@ public class FactorialQuestion {
 		System.out.println("5! = " + factorial2(5));
 		System.out.println("9! = " + factorial2(9));
 		System.out.println("10! = " + factorial2(10));
+		System.out.println( factorial2(-10));
+		
 		
 		System.out.println("\n=================================== End ===FactorialQuestion==========================\n");
 
@@ -37,7 +40,7 @@ public class FactorialQuestion {
 		int p = 1;
 		
 		if (n < 0) {
-			System.out.println("Factorial in not defined negative numbers. Given number is " + n + "\n");
+			System.out.println("Factorial is not defined negative numbers. Given number is " + n + "\n");
 			return;
 		}
 		
@@ -64,8 +67,12 @@ public class FactorialQuestion {
 	//----2----------------
 	public static int factorial2(int n) {
 		int r = 1;
+		
+		if (n <= 0) {
+			System.out.println("Factorial is not defined negative numbers. Given number is " + n + "\n");
+ 			return -1; 
  		
-		if (n == 0) {
+		} else if (n == 0) {
 
  			return 1; 
  		
