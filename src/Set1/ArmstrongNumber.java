@@ -28,6 +28,9 @@ public class ArmstrongNumber {
 		getArmstrong(99, 9999);
 		getArmstrong(99, 9999);
 		getArmstrong(400, 5000);
+		
+		
+		getArmstrong(300, 800);
 			
 		System.out.println("\n=================================== End ===ArmstrongNumber==========================\n");
 
