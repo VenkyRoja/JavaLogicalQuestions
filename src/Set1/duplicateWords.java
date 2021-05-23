@@ -2,6 +2,7 @@ package Set1;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Set;
 
 public class duplicateWords {
 
@@ -15,7 +16,7 @@ public class duplicateWords {
 		
 		countDuplicates("Big black bug bit a big black dog on his big black nose", true);
 		
-		countDuplicates("Remove duplicate words from String in Java example shows how to remove duplicate words from String in Java. The example also shows various approaches to do the same.", true);
+		countDuplicates("Remove duplicate words from String in Java example shows how to remove duplicate words from String in Java . The example also shows various approaches to do the same .", true);
 
 		
 		System.out.println("\n=================================== End ===duplicateWords==========================\n");	
@@ -38,7 +39,9 @@ public class duplicateWords {
 		String words[] = s.split(" ");
 		
 		if (print) {	
+			System.out.println("\n===Original statement======\n");
 			System.out.println(s);
+			System.out.println("\n");
 			System.out.println(Arrays.toString(words));
 			System.out.println("\n");
 		}
@@ -65,6 +68,7 @@ public class duplicateWords {
 	     });
 		//.....
 		
+		
 		System.out.println("\nCount of words:");
 		System.out.println(H.toString()); 
 		
@@ -74,6 +78,20 @@ public class duplicateWords {
 		System.out.println("\nCount of unique words:");
 		System.out.println(N.toString());	
 		
+		Set<String> SH = H.keySet();
+		Set<String> SD = D.keySet();
+		Set<String> SN = N.keySet();
+		
+		System.out.println("\n------------------\n");
+		System.out.println("All words:\n" + SH.toString() + "\n");
+		System.out.println("Duplicate words\n" + SD.toString() + "\n");
+		System.out.println("Unique words\n" + SN.toString() + "\n");
+		
+		System.out.println("\n------------------\n");
+		
+		System.out.println("All words:"); SH.forEach((x) -> System.out.print(x + " --- ")); System.out.println("\n");
+		System.out.println("Duplicate words:"); SD.forEach((x) -> System.out.print(x + " --- ")); System.out.println("\n");
+		System.out.println("Unique words:");SN.forEach((x) -> System.out.print(x + " --- ")); System.out.println("\n");
 	}
 	
 
