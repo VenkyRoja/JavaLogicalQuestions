@@ -8,7 +8,7 @@ public class duplicateWords {
 	//----1----------------
 	public static void main(String[] args) {
 	
-		System.out.println("\n=================================== Begin ===FactorialQuestion========================\n");
+		System.out.println("\n=================================== Begin ===duplicateWords========================\n");
 		
 		printProblemStatement();
 
@@ -18,7 +18,7 @@ public class duplicateWords {
 		countDuplicates("Remove duplicate words from String in Java example shows how to remove duplicate words from String in Java. The example also shows various approaches to do the same.", true);
 
 		
-		System.out.println("\n=================================== End ===FactorialQuestion==========================\n");	
+		System.out.println("\n=================================== End ===duplicateWords==========================\n");	
 
 	}
 
